@@ -85,19 +85,15 @@
     <section id="contato" class="py-20 bg-navy text-white">
         <div class="container mx-auto px-4 max-w-4xl">
             <h3 class="text-3xl font-bold text-center mb-8">Ficha de Inscrição e Contato</h3>
-            <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="grid grid-cols-1 gap-6">
-                <input type="text" name="nome" placeholder="Seu Nome Completo" required class="p-4 rounded text-gray-900">
-                <input type="email" name="email" placeholder="Seu Melhor E-mail" required class="p-4 rounded text-gray-900">
-                <input type="text" name="whatsapp" placeholder="WhatsApp (DDD)" required class="p-4 rounded text-gray-900">
-                <select name="curso_interesse" class="p-4 rounded text-gray-900">
-                    <option value="">Curso de Interesse</option>
-                    <option value="ELMO">ELMO - Escola de Líderes</option>
-                    <option value="Inteligência Emocional">Inteligência Emocional</option>
-                    <option value="Teologia">Curso Básico de Teologia</option>
-                </select>
-                <textarea name="mensagem" placeholder="Como podemos te ajudar?" rows="4" class="p-4 rounded text-gray-900"></textarea>
-                <button type="submit" class="bg-gold text-navy font-bold py-4 rounded hover:bg-yellow-500 transition">ENVIAR INSCRIÇÃO</button>
-            </form>
+            <<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="SEU_CODIGO_AQUI">
+    
+    <input type="text" name="name" placeholder="Seu Nome" required>
+    <input type="email" name="email" placeholder="Seu E-mail" required>
+    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+    
+    <button type="submit">Enviar Inscrição</button>
+</form>
             <div class="mt-12 text-center text-sm opacity-70">
                 <p>End: Rua Ubarana, 159 - Alto da Colina - Itapevi/SP</p>
                 <p>Tel: (11) 95364-3849</p>
