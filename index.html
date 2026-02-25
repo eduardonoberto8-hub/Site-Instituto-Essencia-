@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essência Instituto de Ensino | Inteligência & Desenvolvimento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .bg-gold { background-color: #D4AF37; }
+        .text-gold { color: #D4AF37; }
+        .bg-navy { background-color: #001F3F; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-navy text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-widest">ESSÊNCIA INSTITUTO</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-gold">Home</a>
+                <a href="#quem-somos" class="hover:text-gold">Quem Somos</a>
+                <a href="#cursos" class="hover:text-gold">Cursos</a>
+                <a href="#contato" class="bg-gold px-4 py-2 rounded font-bold text-navy">Inscrições</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative h-[80vh] flex items-center justify-center text-center text-white bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('171071.png');">
+        <div class="px-4">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">ESSÊNCIA INSTITUTO DE ENSINO</h2>
+            <p class="text-xl md:text-2xl text-gold italic mb-6">"Inteligência & Desenvolvimento"</p>
+            <p class="max-w-2xl mx-auto mb-8">"Provérbios 27:17 Como o ferro com o ferro se afia, assim, o homem, ao seu amigo."</p>
+            <a href="#contato" class="bg-gold text-navy px-8 py-3 rounded-full font-bold text-lg hover:scale-105 transition">Começar Transformação</a>
+        </div>
+    </header>
+
+    <section id="quem-somos" class="py-20 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <img src="171072.png" alt="Eduardho Santtos" class="rounded-lg shadow-2xl">
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <h3 class="text-3xl font-bold text-navy mb-6 underline decoration-gold">Quem Somos</h3>
+                <p class="text-lg leading-relaxed mb-6">Nosso foco é contribuir com o reino de Deus de maneira prática, teórica e espiritual levando treinamento e capacitação através de seminários, palestras, cursos e mentoria.</p>
+                <ul class="space-y-3 font-semibold text-navy">
+                    <li class="flex items-center"><span class="text-gold mr-2">✓</span> Agentes de Transformação</li>
+                    <li class="flex items-center"><span class="text-gold mr-2">✓</span> Mentoria Espiritual e Emocional</li>
+                    <li class="flex items-center"><span class="text-gold mr-2">✓</span> Cobertura Ministerial e Familiar</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-red-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <img src="171081.png" alt="ELMO" class="w-32 mx-auto mb-6">
+            <h3 class="text-4xl font-bold mb-4">ELMO - ESCOLA DE LÍDERES</h3>
+            <p class="text-xl mb-6">Ministros e Obreiros - Duração 8 Semanas</p>
+            <p class="max-w-3xl mx-auto italic opacity-90">"Ter uma chamada recebida por Deus não é o suficiente... é preciso capacitação e direcionamento."</p>
+        </div>
+    </section>
+
+    <section id="cursos" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-navy mb-12">Nossos Treinamentos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded shadow-lg border-t-4 border-gold">
+                    <h4 class="font-bold text-xl mb-4">Inteligência Emocional</h4>
+                    <p>Aprenda a gerir suas emoções e traumas.</p>
+                </div>
+                <div class="bg-white p-8 rounded shadow-lg border-t-4 border-gold">
+                    <h4 class="font-bold text-xl mb-4">Formação de Obreiros</h4>
+                    <p>CPPO - Curso Preparatório para Obreiros com excelência.</p>
+                </div>
+                <div class="bg-white p-8 rounded shadow-lg border-t-4 border-gold">
+                    <h4 class="font-bold text-xl mb-4">Família e Educação</h4>
+                    <p>Educação de pais e filhos sob princípios eternos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-20 bg-navy text-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h3 class="text-3xl font-bold text-center mb-8">Ficha de Inscrição e Contato</h3>
+            <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="grid grid-cols-1 gap-6">
+                <input type="text" name="nome" placeholder="Seu Nome Completo" required class="p-4 rounded text-gray-900">
+                <input type="email" name="email" placeholder="Seu Melhor E-mail" required class="p-4 rounded text-gray-900">
+                <input type="text" name="whatsapp" placeholder="WhatsApp (DDD)" required class="p-4 rounded text-gray-900">
+                <select name="curso_interesse" class="p-4 rounded text-gray-900">
+                    <option value="">Curso de Interesse</option>
+                    <option value="ELMO">ELMO - Escola de Líderes</option>
+                    <option value="Inteligência Emocional">Inteligência Emocional</option>
+                    <option value="Teologia">Curso Básico de Teologia</option>
+                </select>
+                <textarea name="mensagem" placeholder="Como podemos te ajudar?" rows="4" class="p-4 rounded text-gray-900"></textarea>
+                <button type="submit" class="bg-gold text-navy font-bold py-4 rounded hover:bg-yellow-500 transition">ENVIAR INSCRIÇÃO</button>
+            </form>
+            <div class="mt-12 text-center text-sm opacity-70">
+                <p>End: Rua Ubarana, 159 - Alto da Colina - Itapevi/SP</p>
+                <p>Tel: (11) 95364-3849</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+  </html>
+  
