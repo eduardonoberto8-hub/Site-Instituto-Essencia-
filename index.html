@@ -10,6 +10,12 @@
         body { font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
         .bg-navy { background-color: #001F3F; }
         .text-gold { color: #D4AF37; }
+        /* Garante que os campos do formulário sejam visíveis e legíveis */
+        input, textarea {
+            color: #000000 !important;
+            background-color: #ffffff !important;
+            border: 1px solid #cccccc !important;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -68,16 +74,15 @@
         </div>
     </section>
 
-    <section class="bg-navy py-10">
-        <div class="container mx-auto px-4 flex justify-center">
-            <img src="177426.png" alt="Instituto Essência Banner" class="rounded-xl shadow-2xl border-2 border-gold max-w-full md:max-w-4xl">
-        </div>
-    </section>
-
     <section id="elmo" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-5xl font-bold text-navy mb-2">ELMO</h2>
             <p class="text-xl text-gold font-bold mb-10 tracking-[0.3em]">ESCOLA DE LÍDERES</p>
+            
+            <div class="max-w-4xl mx-auto mb-16">
+                <img src="177426.png" alt="Banner ELMO" class="rounded-3xl shadow-2xl border-2 border-gold mx-auto">
+            </div>
+
             <div class="max-w-3xl mx-auto bg-white p-10 rounded-3xl shadow-lg border-t-8 border-gold">
                 <p class="text-2xl italic text-gray-700 mb-6">"Ter uma chamada recebida por Deus não é o bastante, é preciso estar preparado."</p>
                 <p class="text-navy font-bold text-xl uppercase tracking-wider">Duração: 8 Semanas</p>
@@ -92,8 +97,13 @@
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="78323efc-cc40-42be-bb5f-49f94416f4c1">
                 
-                <input type="text" name="name" placeholder="Nome Completo" required 
-                    style="width: 100%; padding: 15px; margin-bottom: 20px; border: 2px solid #eee; border-radius: 10px; color: #333 !important; font-size: 1rem;">
+                <label style="display: block; text-align: left; margin-bottom: 5px; color: #333; font-weight: bold;">Nome Completo:</label>
+                <input type="text" name="name" placeholder="Digite seu nome" required 
+                    style="width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 10px; display: block;">
                 
-                <input type="email" name="email" placeholder="Seu Melhor E-mail" required 
-                    style="width: 100%; padding: 15px; margin-bottom: 20px; border: 2px solid #eee; border-radius: 10px;
+                <label style="display: block; text-align: left; margin-bottom: 5px; color: #333; font-weight: bold;">E-mail de Contato:</label>
+                <input type="email" name="email" placeholder="seuemail@exemplo.com" required 
+                    style="width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 10px; display: block;">
+                
+
+                
