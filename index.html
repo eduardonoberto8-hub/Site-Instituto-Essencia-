@@ -10,6 +10,7 @@
         body { font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
         .bg-navy { background-color: #001F3F; }
         .text-gold { color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -20,60 +21,86 @@
             <div class="hidden md:flex space-x-6">
                 <a href="#home" class="hover:text-gold">Início</a>
                 <a href="#quem-somos" class="hover:text-gold">Quem Somos</a>
-                <a href="#cursos" class="hover:text-gold">Treinamentos</a>
+                <a href="#cursos" class="hover:text-gold">ELMO</a>
                 <a href="#contato" class="bg-gold text-navy px-4 py-2 rounded font-bold" style="background-color: #D4AF37; color: #001F3F;">Inscrições</a>
             </div>
         </div>
     </nav>
 
-    <header id="home" style="position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('171071.png') no-repeat center center; background-size: cover; padding: 20px;">
+    <header id="home" style="position: relative; min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('171071.png') no-repeat center center; background-size: cover; padding: 20px;">
         <div style="max-width: 800px; width: 100%;">
             <img src="171081.png" alt="Logo" style="width: 120px; margin: 0 auto 20px auto;">
             <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px;">ESSÊNCIA INSTITUTO DE ENSINO</h1>
             <p style="font-size: 1.2rem; color: #D4AF37; font-weight: bold; margin-bottom: 20px;">Inteligência & Desenvolvimento</p>
-            <p style="font-size: 1rem; margin-bottom: 30px; font-style: italic; opacity: 0.9;">
+            <p style="font-size: 1.1rem; margin-bottom: 30px; font-style: italic; opacity: 0.9;">
                 "Como o ferro com o ferro se afia, assim, o homem, ao seu amigo."<br>Provérbios 27:17
             </p>
-            <a href="#contato" style="display: inline-block; background-color: #D4AF37; color: #001F3F; padding: 15px 40px; border-radius: 50px; font-weight: bold; text-decoration: none; text-transform: uppercase;">Começar Transformação</a>
         </div>
     </header>
 
-    <section id="quem-somos" class="py-20 bg-white">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
-            <div class="md:w-1/2">
-                <img src="171072.png" alt="Eduardho Santos" class="rounded-lg shadow-2xl w-full">
+    <section id="quem-somos" class="py-16 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 flex justify-center">
+                <div style="border-bottom: 8px solid #D4AF37; border-radius: 15px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+                    <img src="171072.png" alt="Eduardho Santos" style="width: 100%; max-width: 400px; display: block;">
+                    <div class="bg-white p-4 text-center">
+                        <h3 class="text-xl font-bold text-navy">Eduardho Santos</h3>
+                    </div>
+                </div>
             </div>
             <div class="md:w-1/2">
                 <h2 class="text-3xl font-bold text-navy mb-6 underline decoration-gold" style="color: #001F3F;">Quem Somos</h2>
-                <p class="text-lg leading-relaxed mb-6">Nosso foco é contribuir com o reino de Deus de maneira prática, teórica e espiritual com o foco na inteligência emocional e no desenvolvimento humano.</p>
-                <ul class="space-y-4 font-semibold">
-                    <li class="flex items-center"><span class="text-gold mr-3">✔</span> Agentes de Transformação</li>
-                    <li class="flex items-center"><span class="text-gold mr-3">✔</span> Mentoria Espiritual e Emocional</li>
-                    <li class="flex items-center"><span class="text-gold mr-3">✔</span> Cobertura Ministerial e Familiar</li>
-                </ul>
+                <p class="text-lg leading-relaxed mb-6">Nosso foco é contribuir com o reino de Deus de maneira prática, teórica e espiritual com foco na inteligência emocional e no desenvolvimento humano.</p>
+                <div class="grid grid-cols-1 gap-4 font-semibold">
+                    <p><span class="text-gold">●</span> Agentes de Transformação</p>
+                    <p><span class="text-gold">●</span> Mentoria Espiritual e Emocional</p>
+                    <p><span class="text-gold">●</span> Cobertura Ministerial e Familiar</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contato" style="padding: 60px 20px; background-color: #001F3F; text-align: center;">
-        <div style="max-width: 500px; margin: 0 auto; background-color: #f9f9f9; padding: 30px; border-radius: 15px; border-top: 5px solid #D4AF37; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
-            <h2 style="color: #001F3F; margin-bottom: 20px; font-weight: bold; font-size: 1.5rem;">Inscrição e Contato</h2>
+    <section id="cursos" class="py-16 bg-gray-100 border-t-4 border-gold">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-navy mb-4">ELMO</h2>
+            <p class="text-2xl text-gold font-bold mb-8 uppercase tracking-widest">Escola de Líderes</p>
+            <div class="bg-navy text-white p-8 rounded-2xl shadow-xl inline-block max-width-xl mx-auto">
+                <p class="text-xl italic mb-4">"Ter uma chamada recebida por Deus não é o bastante, é preciso estar preparado."</p>
+                <div class="h-1 w-20 bg-gold mx-auto my-4"></div>
+                <p class="text-lg font-bold">Duração: 8 Semanas</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" style="padding: 80px 20px; background-color: #001F3F; text-align: center;">
+        <div style="max-width: 500px; margin: 0 auto; background-color: #f9f9f9; padding: 40px; border-radius: 20px; border-top: 6px solid #D4AF37; box-shadow: 0 15px 35px rgba(0,0,0,0.4);">
+            <h2 style="color: #001F3F; margin-bottom: 25px; font-weight: bold; font-size: 1.8rem;">Inscrição e Contato</h2>
+            
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="78323efc-cc40-42be-bb5f-49f94416f4c1">
-                <input type="text" name="name" placeholder="Seu Nome Completo" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; color: #333 !important;">
-                <input type="email" name="email" placeholder="Seu Melhor E-mail" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; color: #333 !important;">
-                <textarea name="message" placeholder="Em qual curso ou oficina você tem interesse?" required rows="4" style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; color: #333 !important;"></textarea>
+                
+                <input type="text" name="name" placeholder="Seu Nome Completo" required 
+                    style="width: 100%; padding: 14px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; color: #333 !important; background-color: #fff !important;">
+                
+                <input type="email" name="email" placeholder="Seu Melhor E-mail" required 
+                    style="width: 100%; padding: 14px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; color: #333 !important; background-color: #fff !important;">
+                
+                <textarea name="message" placeholder="Em qual curso ou oficina você tem interesse?" required rows="4" 
+                    style="width: 100%; padding: 14px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px; color: #333 !important; background-color: #fff !important;"></textarea>
+                
                 <input type="hidden" name="redirect" value="https://www.essenciainstitutoeensino.com.br">
-                <button type="submit" style="width: 100%; background-color: #D4AF37; color: #001F3F; padding: 15px; border: none; border-radius: 30px; font-weight: bold; cursor: pointer; text-transform: uppercase;">Enviar Inscrição</button>
+
+                <button type="submit" 
+                    style="width: 100%; background-color: #D4AF37; color: #001F3F; padding: 18px; border: none; border-radius: 50px; font-weight: bold; cursor: pointer; text-transform: uppercase; font-size: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                    Enviar Inscrição
+                </button>
             </form>
         </div>
     </section>
 
-    <footer class="bg-navy text-white py-6 text-center border-t border-gray-700">
-        <p>&copy; 2026 Essência Instituto de Ensino. Todos os direitos reservados.</p>
+    <footer class="bg-navy text-white py-8 text-center border-t border-gray-800">
+        <p class="opacity-70">&copy; 2026 Essência Instituto de Ensino. Inteligência & Desenvolvimento.</p>
     </footer>
 
 </body>
 </html>
-
-  
