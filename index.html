@@ -10,20 +10,27 @@
         body { font-family: 'Montserrat', sans-serif; overflow-x: hidden; margin: 0; padding: 0; }
         .bg-navy { background-color: #001F3F; }
         .text-gold { color: #D4AF37; }
-        input, textarea { color: #000 !important; background-color: #fff !important; border: 1px solid #ccc !important; }
         
-        /* Carrossel - Visibilidade Total */
+        /* Ajuste para garantir que os campos sejam visíveis */
+        input, textarea { 
+            color: #000 !important; 
+            background-color: #fff !important; 
+            border: 1px solid #ccc !important; 
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            outline: none;
+        }
+        
+        input:focus, textarea:focus { border-color: #D4AF37 !important; }
+
         .carousel-container {
             display: flex;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             gap: 1.5rem;
             padding: 20px 0;
-            -webkit-overflow-scrolling: touch;
         }
-        .carousel-container::-webkit-scrollbar { height: 6px; }
-        .carousel-container::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 10px; }
-        
         .carousel-item {
             flex: 0 0 300px;
             scroll-snap-align: center;
@@ -32,20 +39,8 @@
             background: #fff;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-
-        .img-agenda {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: contain; 
-        }
-
-        /* Banner de Largura Total */
-        .banner-full {
-            width: 100%;
-            height: auto !important;
-            display: block;
-        }
+        .img-agenda { width: 100%; height: auto; display: block; object-fit: contain; }
+        .banner-full { width: 100%; height: auto !important; display: block; }
 
         @media (min-width: 768px) { .carousel-item { flex: 0 0 380px; } }
     </style>
@@ -129,19 +124,38 @@
     <section id="contato" class="py-20 bg-navy">
         <div class="container mx-auto px-4">
             <div class="max-w-lg mx-auto bg-white p-8 rounded-3xl border-t-8 border-gold shadow-2xl">
-                <h2 class="text-2xl font-bold text-navy text-center mb-6">Inscrição</h2>
-                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                <h2 class="text-3xl font-bold text-navy text-center mb-8">Ficha de Inscrição</h2>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
                     <input type="hidden" name="access_key" value="78323efc-cc40-42be-bb5f-49f94416f4c1">
-                    <input type="text" name="name" placeholder="Seu Nome" required class="w-full p-4 border rounded-xl">
-                    <input type="email" name="email" placeholder="Seu E-mail" required class="w-full p-4 border rounded-xl">
-                    <button type="submit" class="w-full bg-gold text-navy font-bold py-5 rounded-full" style="background-color: #D4AF37;">ENVIAR</button>
+                    
+                    <div>
+                        <label class="block font-bold text-navy mb-2">Nome Completo:</label>
+                        <input type="text" name="name" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div>
+                        <label class="block font-bold text-navy mb-2">E-mail de Contato:</label>
+                        <input type="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div>
+                        <label class="block font-bold text-navy mb-2">Mensagem ou Dúvida:</label>
+                        <textarea name="message" placeholder="Como podemos te ajudar?" rows="4" required></textarea>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-gold text-navy font-bold py-5 rounded-full uppercase tracking-widest shadow-lg hover:bg-yellow-600 transition duration-300" style="background-color: #D4AF37; color: #001F3F;">
+                            ENVIAR AGORA
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
 
     <footer class="bg-navy text-white py-10 text-center text-xs">
-        <p>&copy; 2026 Essência Instituto de Ensino.</p>
+        <p>&copy; 2026 Essência Instituto de Ensino. Todos os direitos reservados.</p>
     </footer>
 
 </body>
