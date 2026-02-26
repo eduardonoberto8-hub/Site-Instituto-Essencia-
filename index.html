@@ -12,7 +12,7 @@
         .text-gold { color: #D4AF37; }
         input, textarea { color: #000 !important; background-color: #fff !important; border: 1px solid #ccc !important; }
         
-        /* Carrossel Estável */
+        /* Carrossel Estável e Controlado */
         .carousel-container {
             display: flex;
             overflow-x: auto;
@@ -32,6 +32,16 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         @media (min-width: 768px) { .carousel-item { flex: 0 0 350px; } }
+        
+        /* Ajuste Fino e Seguro da Imagem de Depoimentos (171036.png) */
+        .img-depoimentos {
+            max-width: 100%;
+            height: auto !important; /* Força a proporção correta */
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15); /* Sombra elegante */
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -52,12 +62,12 @@
 
     <header id="home" style="min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('171096.png') no-repeat center center; background-size: cover; padding: 40px;">
         <div style="max-width: 800px;">
-            <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px;">ESSÊNCIA INSTITUTO DE ENSINO</h1>
+            <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px; line-height: 1.1;">ESSÊNCIA INSTITUTO DE ENSINO</h1>
             <p style="font-size: 1.2rem; color: #D4AF37; font-weight: bold;">Inteligência & Desenvolvimento</p>
         </div>
     </header>
 
-    <section id="agenda" class="py-12 bg-gray-100">
+    <section id="agenda" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-navy text-center mb-6">Próximas Agendas</h2>
             <div class="carousel-container">
@@ -74,6 +84,7 @@
                     <div class="p-4"><h4 class="font-bold text-navy">Seminário Essência</h4><p class="text-xs text-gray-600">Workshop e Treinamento</p></div>
                 </div>
             </div>
+            <p class="text-center text-gray-400 mt-2 italic text-xs">Arraste para o lado para navegar →</p>
         </div>
     </section>
 
@@ -99,14 +110,14 @@
         </div>
     </section>
 
-    <section id="curso" class="py-20 bg-navy text-white">
+    <section id="curso" class="py-20 bg-navy text-white border-t-8 border-gold">
         <div class="container mx-auto px-4">
-            <div class="max-w-5xl mx-auto bg-white text-gray-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+            <div class="max-w-5xl mx-auto bg-white text-gray-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row text-left">
                 <div class="md:w-1/2"><img src="171030.png" class="w-full h-full object-cover"></div>
-                <div class="md:w-1/2 p-12 flex flex-col justify-center">
+                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
                     <h3 class="text-3xl font-bold text-navy mb-4">Essência Class</h3>
-                    <p class="mb-8">Treinamento online para sua maturidade emocional.</p>
-                    <a href="https://eduardho-santtos.herospark.co/p/essencia-class" target="_blank" class="bg-gold text-navy font-bold py-4 px-8 rounded-full text-center" style="background-color: #D4AF37;">ACESSAR AGORA</a>
+                    <p class="mb-8 text-lg">Treinamento online exclusivo para alinhar sua maturidade emocional com o seu propósito.</p>
+                    <a href="https://eduardho-santtos.herospark.co/p/essencia-class" target="_blank" class="bg-gold text-navy font-bold py-4 px-8 rounded-full text-center hover:opacity-90 transition" style="background-color: #D4AF37;">ACESSAR AGORA</a>
                 </div>
             </div>
         </div>
@@ -114,37 +125,49 @@
 
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 text-center">
-            <img src="171036.png" class="max-w-4xl mx-auto shadow-2xl rounded-3xl">
+            <h2 class="text-4xl font-bold text-navy mb-12">Nossa Comunidade em Ação</h2>
+            <div class="max-w-5xl mx-auto px-2">
+                <img src="171036.png" alt="Depoimentos e Fotos Essência" class="img-depoimentos">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4 flex justify-center">
+            <div style="border: 1px solid #D4AF37; padding: 30px; border-radius: 30px; background-color: white;">
+                <img src="171081.png" alt="Logo Instituto Essência" class="w-48 mx-auto">
+            </div>
         </div>
     </section>
 
     <section id="contato" class="py-20 bg-navy">
         <div class="container mx-auto px-4">
-            <div class="max-w-xl mx-auto bg-white p-8 rounded-3xl border-t-8 border-gold shadow-2xl">
-                <h2 class="text-3xl font-bold text-navy text-center mb-8">Inscrição</h2>
+            <div class="max-w-xl mx-auto bg-white p-8 md:p-10 rounded-3xl border-t-8 border-gold shadow-2xl">
+                <h2 class="text-3xl font-bold text-navy text-center mb-8">Faça sua Inscrição</h2>
                 <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6 text-left">
                     <input type="hidden" name="access_key" value="78323efc-cc40-42be-bb5f-49f94416f4c1">
                     <div>
-                        <label class="font-bold block">Nome Completo:</label>
-                        <input type="text" name="name" required class="w-full p-4 border rounded-xl">
+                        <label class="font-bold block mb-1 text-gray-700">Nome Completo:</label>
+                        <input type="text" name="name" required class="w-full p-4 border rounded-xl outline-none focus:ring-2 focus:ring-gold">
                     </div>
                     <div>
-                        <label class="font-bold block">E-mail:</label>
-                        <input type="email" name="email" required class="w-full p-4 border rounded-xl">
+                        <label class="font-bold block mb-1 text-gray-700">E-mail de Contato:</label>
+                        <input type="email" name="email" required class="w-full p-4 border rounded-xl outline-none focus:ring-2 focus:ring-gold">
                     </div>
                     <div>
-                        <label class="font-bold block">Mensagem:</label>
-                        <textarea name="message" required rows="4" class="w-full p-4 border rounded-xl resize-none"></textarea>
+                        <label class="font-bold block mb-1 text-gray-700">Mensagem (Opcional):</label>
+                        <textarea name="message" rows="3" class="w-full p-4 border rounded-xl outline-none resize-none focus:ring-2 focus:ring-gold"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-gold text-navy font-bold py-5 rounded-full" style="background-color: #D4AF37;">ENVIAR</button>
+                    <button type="submit" class="w-full bg-gold text-navy font-bold py-5 rounded-full uppercase tracking-widest hover:bg-yellow-600 transition shadow-lg" style="background-color: #D4AF37;">Enviar Ficha</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="bg-navy text-white py-10 text-center">
-        <p class="opacity-60 text-sm">&copy; 2026 Essência Instituto de Ensino.</p>
+    <footer class="bg-navy text-white py-12 text-center border-t border-gray-700">
+        <p class="opacity-60 text-sm">&copy; 2026 Essência Instituto de Ensino. Todos os direitos reservados.</p>
     </footer>
 
 </body>
-</html>
+    </html>
+    
