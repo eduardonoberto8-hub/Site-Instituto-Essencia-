@@ -6,6 +6,8 @@
     <title>Essência Instituto de Ensino</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Ícones Font Awesome para o símbolo do WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Montserrat', sans-serif; overflow-x: hidden; margin: 0; padding: 0; }
         .bg-navy { background-color: #001F3F; }
@@ -47,10 +49,43 @@
         .img-agenda { width: 100%; height: auto; display: block; object-fit: contain; }
         .banner-full { width: 100%; height: auto !important; display: block; }
 
+        /* Botão Flutuante do WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
+        }
+
         @media (min-width: 768px) { .carousel-item { flex: 0 0 360px; } }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5511932027012?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20palestras%20e%20treinamentos%20do%20Instituto%20Ess%C3%AAncia." 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contato pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- MENU -->
     <nav class="bg-navy text-white p-4 sticky top-0 z-50 shadow-lg">
@@ -103,7 +138,7 @@
         <img src="171081.png" alt="Banner ELMO" class="banner-full shadow-lg">
     </section>
 
-    <!-- 5. NOVO: CARROSSEL CONFERÊNCIA ORIGENS (CENTRAL) -->
+    <!-- 5. CARROSSEL CONFERÊNCIA ORIGENS (CENTRAL) -->
     <section id="origens" class="py-16 bg-navy text-white text-center">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold mb-2 text-gold">Conferência ORIGENS</h2>
