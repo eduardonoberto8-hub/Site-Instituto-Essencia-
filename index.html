@@ -128,10 +128,11 @@
             <h1 class="font-bold tracking-wider text-gold">ESSÊNCIA INSTITUTO</h1>
             <div class="hidden md:flex space-x-6 font-semibold">
                 <a href="#home" class="hover:text-gold">Início</a>
-                <a href="#agenda" class="hover:text-gold">Agendas</a>
-                <a href="#origens" class="hover:text-gold">Origens</a>
+                <a href="#quem-somos" class="hover:text-gold">Quem Somos</a>
                 <a href="#elmo" class="hover:text-gold">ELMO</a>
+                <a href="#origens" class="hover:text-gold">Origens</a>
                 <a href="#curso" class="hover:text-gold">Cursos</a>
+                <a href="#agenda" class="hover:text-gold">Agendas</a>
                 <a href="#contato" class="bg-gold text-navy px-4 py-2 rounded-full font-bold" style="background-color: #D4AF37; color: #001F3F;">Inscrições</a>
             </div>
         </div>
@@ -145,39 +146,25 @@
         </div>
     </header>
 
-    <!-- 2. AGENDAS -->
-    <section id="agenda" class="py-12 bg-gray-100">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-navy mb-8">Próximas Agendas</h2>
-            
-            <div class="relative max-w-5xl mx-auto flex items-center gap-2">
-                <!-- Botão Esquerda -->
-                <button onclick="scrollCarousel('carousel-agendas', -320)" class="carousel-btn hidden md:flex" aria-label="Anterior">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-
-                <!-- Carrossel -->
-                <div id="carousel-agendas" class="carousel-container w-full">
-                    <div class="carousel-item"><img src="171033.png" class="img-agenda"></div>
-                    <div class="carousel-item"><img src="171032.png" class="img-agenda"></div>
-                    <div class="carousel-item"><img src="171035.png" class="img-agenda"></div>
-                </div>
-
-                <!-- Botão Direita -->
-                <button onclick="scrollCarousel('carousel-agendas', 320)" class="carousel-btn hidden md:flex" aria-label="Próximo">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+    <!-- 2. NOVO LOCAL: QUEM SOMOS / PROPÓSITO (AGORA NO TOPO) -->
+    <section id="quem-somos" class="py-20 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10 text-left">
+            <div class="md:w-1/2 flex justify-center">
+                <img src="171072.png" alt="Eduardho Santos" class="max-w-xs rounded-2xl shadow-xl">
             </div>
-            <p class="text-gray-400 mt-2 italic text-xs md:hidden">Arraste para o lado para ver detalhes →</p>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-navy mb-4">Nosso Propósito</h2>
+                <p class="text-lg text-gray-700">Contribuir com o Reino de Deus de maneira prática e teórica, focando na inteligência emocional e no desenvolvimento humano completo.</p>
+            </div>
         </div>
     </section>
 
     <!-- 3. DESCRIÇÃO ELMO -->
-    <section id="elmo" class="py-16 bg-white text-center">
+    <section id="elmo" class="py-16 bg-gray-50 text-center">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-navy mb-2">ELMO</h2>
             <p class="text-gold font-bold mb-8 tracking-widest">ESCOLA DE LÍDERES</p>
-            <div class="max-w-2xl mx-auto bg-gray-50 p-10 rounded-3xl shadow-lg border-t-4 border-gold">
+            <div class="max-w-2xl mx-auto bg-white p-10 rounded-3xl shadow-lg border-t-4 border-gold">
                 <p class="text-2xl italic text-gray-600">"Ter uma chamada recebida por Deus não é o bastante, é preciso estar preparado."</p>
             </div>
         </div>
@@ -225,30 +212,44 @@
         </div>
     </section>
 
-    <!-- 6. PROPÓSITO -->
-    <section id="quem-somos" class="py-20 bg-white">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10 text-left">
-            <div class="md:w-1/2 flex justify-center">
-                <img src="171072.png" alt="Eduardho Santos" class="max-w-xs rounded-2xl shadow-xl">
-            </div>
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-bold text-navy mb-4">Nosso Propósito</h2>
-                <p class="text-lg text-gray-700">Contribuir com o Reino de Deus de maneira prática e teórica, focando na inteligência emocional e no desenvolvimento humano completo.</p>
+    <!-- 6. ESSÊNCIA CLASS -->
+    <section id="curso" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-navy text-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="md:w-1/2"><img src="171030.png" class="w-full h-full object-cover"></div>
+                <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-gold mb-4">Essência Class</h3>
+                    <p class="mb-8">Maturidade emocional e espiritual em uma plataforma exclusiva.</p>
+                    <a href="https://eduardho-santtos.herospark.co/p/essencia-class" target="_blank" class="bg-gold text-navy font-bold py-4 rounded-full text-center" style="background-color: #D4AF37; color: #001F3F;">ACESSAR AGORA</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 7. ESSÊNCIA CLASS -->
-    <section id="curso" class="py-20 bg-navy text-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto bg-white text-gray-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
-                <div class="md:w-1/2"><img src="171030.png" class="w-full h-full object-cover"></div>
-                <div class="md:w-1/2 p-10 flex flex-col justify-center">
-                    <h3 class="text-2xl font-bold text-navy mb-4">Essência Class</h3>
-                    <p class="mb-8">Maturidade emocional e espiritual em uma plataforma exclusiva.</p>
-                    <a href="https://eduardho-santtos.herospark.co/p/essencia-class" target="_blank" class="bg-gold text-navy font-bold py-4 rounded-full text-center" style="background-color: #D4AF37;">ACESSAR AGORA</a>
+    <!-- 7. NOVO LOCAL: PRÓXIMAS AGENDAS (AGORA NA PARTE INFERIOR) -->
+    <section id="agenda" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-navy mb-8">Próximas Agendas</h2>
+            
+            <div class="relative max-w-5xl mx-auto flex items-center gap-2">
+                <!-- Botão Esquerda -->
+                <button onclick="scrollCarousel('carousel-agendas', -320)" class="carousel-btn hidden md:flex" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <!-- Carrossel -->
+                <div id="carousel-agendas" class="carousel-container w-full">
+                    <div class="carousel-item"><img src="171033.png" class="img-agenda"></div>
+                    <div class="carousel-item"><img src="171032.png" class="img-agenda"></div>
+                    <div class="carousel-item"><img src="171035.png" class="img-agenda"></div>
                 </div>
+
+                <!-- Botão Direita -->
+                <button onclick="scrollCarousel('carousel-agendas', 320)" class="carousel-btn hidden md:flex" aria-label="Próximo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
+            <p class="text-gray-400 mt-2 italic text-xs md:hidden">Arraste para o lado para ver detalhes →</p>
         </div>
     </section>
 
