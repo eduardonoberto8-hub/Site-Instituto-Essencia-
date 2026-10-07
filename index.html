@@ -26,7 +26,7 @@
         .bg-navy { background-color: #001F3F; }
         .text-gold { color: #D4AF37; }
         
-        input, textarea { 
+        input, select, textarea { 
             color: #000 !important; 
             background-color: #fff !important; 
             border: 1px solid #ccc !important; 
@@ -36,7 +36,7 @@
             outline: none;
         }
         
-        input:focus, textarea:focus { border-color: #D4AF37 !important; }
+        input:focus, select:focus, textarea:focus { border-color: #D4AF37 !important; }
 
         /* Estilo dos Carrosséis */
         .carousel-container {
@@ -308,7 +308,7 @@
         <img src="171036.png" alt="Impacto" class="banner-full">
     </section>
 
-    <!-- 8. FORMULÁRIO -->
+    <!-- 8. FORMULÁRIO DE INSCRIÇÃO MELHORADO -->
     <section id="contato" class="py-20 bg-navy">
         <div class="container mx-auto px-4">
             <div class="max-w-lg mx-auto bg-white p-8 rounded-3xl border-t-8 border-gold shadow-2xl">
@@ -323,8 +323,24 @@
                     </div>
 
                     <div>
+                        <label class="block font-bold text-navy mb-2">Telefone de Contato (WhatsApp):</label>
+                        <input type="tel" name="phone" placeholder="(11) 99999-9999" required>
+                    </div>
+
+                    <div>
                         <label class="block font-bold text-navy mb-2">E-mail de Contato:</label>
                         <input type="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div>
+                        <label class="block font-bold text-navy mb-2">Formação de Interesse:</label>
+                        <select name="interesse" required>
+                            <option value="" disabled selected>Selecione uma opção...</option>
+                            <option value="CPPO">CPPO - Curso Preparatório para Obreiros</option>
+                            <option value="Curso de Formação Inteligente">Curso de Formação Inteligente</option>
+                            <option value="Palestra Origens">Palestra ORIGENS</option>
+                            <option value="Outros">Outros</option>
+                        </select>
                     </div>
 
                     <div>
