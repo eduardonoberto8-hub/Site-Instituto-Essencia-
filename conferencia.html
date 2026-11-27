@@ -1,101 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conferência Origens — Edição Renascimento. Olhe para as raízes. Reconsidere os padrões. Reescreva sua história.">
-  <meta name="theme-color" content="#090909">
-  <title>Conferência Origens | Edição Renascimento</title>
-  <style>
-    :root{--gold:#d5b36a;--gold2:#f1d99b;--black:#080808;--muted:#b9b2a4}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--black);color:#f7f3e9;font-family:Georgia,'Times New Roman',serif;line-height:1.65}
-    a{color:inherit}
-    .hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 22px;background:radial-gradient(ellipse at 50% 25%,#493719 0%,#17130c 35%,#080808 72%);position:relative;overflow:hidden}
-    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.78))}
-    .hero-inner{position:relative;max-width:900px}
-    .eyebrow{font:600 12px/1.4 Arial,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--gold2)}
-    h1{font-size:clamp(42px,8vw,88px);line-height:.98;letter-spacing:.015em;margin:25px 0 14px;text-transform:uppercase;font-weight:500}
-    h1 span{display:block;color:var(--gold);font-size:.57em;letter-spacing:.18em;margin-top:18px}
-    .tagline{font-size:clamp(17px,2.5vw,23px);color:#e5dcc8;margin:30px auto 36px;max-width:700px}
-    .gold-line{width:90px;height:1px;background:var(--gold);margin:28px auto}
-    .meta{font:13px/1.8 Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#e4d6b5}
-    .btn{display:inline-block;margin-top:28px;padding:15px 27px;border:1px solid var(--gold);background:linear-gradient(135deg,#f0d99c,#b58b42);color:#17120a;text-decoration:none;font:700 12px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;transition:.2s}
-    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
-    section{padding:76px 22px}
-    .wrap{max-width:900px;margin:auto}
-    .section-kicker{font:600 11px Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
-    h2{font-size:clamp(30px,5vw,48px);line-height:1.12;font-weight:500;margin:14px 0 24px}
-    p{color:#d4cdbf;font-size:17px}
-    .center{text-align:center}
-    .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
-    .pillar{border:1px solid rgba(213,179,106,.35);padding:26px 22px;background:linear-gradient(145deg,#17140e,#0b0b0b)}
-    .pillar b{display:block;color:var(--gold2);font:600 12px Arial,sans-serif;letter-spacing:.16em;margin-bottom:12px}
-    .pillar p{font-size:15px;margin:0}
-    .ticket{background:linear-gradient(145deg,#1c180f,#0a0a09);border-top:1px solid rgba(213,179,106,.4);border-bottom:1px solid rgba(213,179,106,.4)}
-    .price{font-size:clamp(42px,7vw,68px);color:var(--gold2);line-height:1.1;margin:18px 0 5px}
-    .price small{font-size:16px;color:#d4cdbf}
-    .speaker{display:grid;grid-template-columns:1fr 1.4fr;gap:35px;align-items:center}
-    .portrait-placeholder{min-height:320px;border:1px solid rgba(213,179,106,.4);background:radial-gradient(ellipse at 50% 35%,#5b4827,#17130d 55%,#080808);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;color:var(--gold2);font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}
-    .speaker h2{margin-bottom:8px}
-    .note{font:12px/1.7 Arial,sans-serif;color:#a9a090}
-    footer{text-align:center;padding:35px 20px;border-top:1px solid #292318;color:#9f9788;font:11px Arial,sans-serif;letter-spacing:.08em}
-    @media(max-width:680px){.pillars{grid-template-columns:1fr}.speaker{grid-template-columns:1fr}.portrait-placeholder{min-height:220px}section{padding:58px 20px}.hero{min-height:82vh}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Conferência Origens — Renascimento. Olhe para as raízes. Reconsidere os padrões. Reescreva sua história.">
+<meta name="theme-color" content="#080808">
+<title>Conferência Origens — Renascimento</title>
+<style>
+:root{--gold:#d5b36a;--cream:#f5eddd;--muted:#c7bead;--black:#080808}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+.wrap{width:min(980px,calc(100% - 40px));margin:auto}
+.hero{padding:26px 0 70px;text-align:center;background:radial-gradient(ellipse at top,#302516,#080808 65%)}
+.banner{display:block;width:min(100%,900px);height:auto;margin:0 auto 34px;border:1px solid rgba(213,179,106,.35)}
+.kicker{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
+h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;line-height:1.12}
+h1{font-size:clamp(34px,7vw,66px);margin:14px 0}
+h2{font-size:clamp(28px,5vw,43px);margin:12px 0 20px}
+.lead{max-width:740px;margin:18px auto;color:var(--muted);font-family:Georgia,serif;font-size:clamp(18px,2.5vw,23px)}
+.meta{color:#e4d6b5;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin:24px 0}
+.btn{display:inline-block;background:linear-gradient(135deg,#f0d99c,#b58b42);color:#17120a;text-decoration:none;padding:15px 26px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+section{padding:66px 0}.center{text-align:center}.muted{color:var(--muted)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.pillar{padding:24px;border:1px solid rgba(213,179,106,.3);background:#11100d}
+.pillar b{color:var(--gold);font-size:12px;letter-spacing:.13em}.pillar p{color:var(--muted);font-size:15px}
+.ticket{background:linear-gradient(135deg,#1c180f,#0a0a09);border-block:1px solid rgba(213,179,106,.35)}
+.price{font:clamp(44px,8vw,70px) Georgia,serif;color:#f1d99b;margin:10px 0}.price small{font:16px Arial,sans-serif;color:var(--muted)}
+.speaker{max-width:740px;margin:auto}.speaker p{color:var(--muted)}
+footer{text-align:center;padding:30px 20px;border-top:1px solid #292318;color:#9f9788;font-size:11px;letter-spacing:.08em}
+@media(max-width:650px){.pillars{grid-template-columns:1fr}.hero{padding-top:12px}section{padding:48px 0}.wrap{width:min(100% - 30px,980px)}}
+</style>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="eyebrow">Instituto Escola Essência apresenta</div>
-      <h1>Origens <span>Edição Renascimento</span></h1>
-      <div class="gold-line"></div>
-      <p class="tagline">Olhe para as raízes. Reconsidere os padrões. Reescreva sua história.</p>
-      <div class="meta">20 de fevereiro de 2027 · Sábado · 14h às 18h<br>Itapevi e região · São Paulo</div>
-      <a class="btn" href="#inscricao">Quero participar</a>
-    </div>
-  </header>
-
-  <section>
-    <div class="wrap center">
-      <div class="section-kicker">Uma experiência de reflexão e transformação</div>
-      <h2>O que está na raiz da sua história?</h2>
-      <p>Nossas raízes influenciam a maneira como pensamos, sentimos e agimos. Muitas vezes, repetimos padrões sem perceber de onde eles vieram — e sem questionar se ainda fazem sentido para a vida que desejamos construir.</p>
-      <p>A Conferência Origens — Edição Renascimento é um convite para olhar com mais consciência para a própria história, reconsiderar padrões e abrir espaço para novas possibilidades.</p>
-      <div class="pillars">
-        <div class="pillar"><b>01 · OLHAR</b><p>Reconhecer as raízes e identificar influências que marcaram sua trajetória.</p></div>
-        <div class="pillar"><b>02 · RECONSIDERAR</b><p>Questionar padrões, pensamentos e comportamentos que podem estar limitando seus passos.</p></div>
-        <div class="pillar"><b>03 · REESCREVER</b><p>Assumir novas perspectivas e construir, com consciência, os próximos capítulos da sua história.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ticket" id="inscricao">
-    <div class="wrap center">
-      <div class="section-kicker">Condição promocional</div>
-      <h2>Uma experiência para viver e compartilhar.</h2>
-      <div class="price">R$ 49,90 <small>por duas pessoas</small></div>
-      <p>Convide alguém para participar com você.</p>
-      <p class="note">Evento presencial · 20/02/2027 · Das 14h às 18h<br>Local exato em Itapevi/região será informado após a confirmação do espaço.</p>
-      <a class="btn" href="https://wa.me/5511932027012?text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20e%20inscri%C3%A7%C3%A3o%20para%20a%20Confer%C3%AAncia%20Origens%20%E2%80%94%20Edi%C3%A7%C3%A3o%20Renascimento." target="_blank" rel="noopener">Falar no WhatsApp e reservar</a>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap speaker">
-      <div class="portrait-placeholder">Pr. Eduardho Santtos<br>Imagem oficial do palestrante</div>
-      <div>
-        <div class="section-kicker">Palestrante</div>
-        <h2>Pr. Eduardho Santtos</h2>
-        <p>Uma tarde de conteúdo, reflexão e provocações para quem deseja compreender melhor suas origens e olhar para o futuro com novas perspectivas.</p>
-        <p class="note">A identidade visual e a fotografia oficial do palestrante serão inseridas na próxima atualização da página.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    INSTITUTO ESCOLA ESSÊNCIA · CONFERÊNCIA ORIGENS — EDIÇÃO RENASCIMENTO<br>
-    © 2027 · Todos os direitos reservados.
-  </footer>
-</body>
-  </html>
+<header class="hero">
+<div class="wrap">
+<img class="banner" src="https://raw.githubusercontent.com/eduardonoberto8-hub/Site-Instituto-Essencia-/main/Confer%C3%AAncia%20Origens.png" alt="Banner oficial da Conferência Origens — Renascimento">
+<div class="kicker">Instituto Escola Essência apresenta</div>
+<h1>Conferência Origens<br><span style="color:var(--gold)">Renascimento</span></h1>
+<p class="lead">Olhe para as raízes. Reconsidere os padrões. Reescreva sua história.</p>
+<div class="meta">20 de fevereiro de 2027 · Sábado · 14h às 18h<br>Itapevi e região · São Paulo</div>
+<a class="btn" href="https://checkout.infinitepay.io/eduardhosannttos/8qLj6KCjLC" target="_blank" rel="noopener">Garantir minha inscrição</a>
+</div>
+</header>
+<section><div class="wrap center">
+<div class="kicker">Uma experiência de reflexão e transformação</div>
+<h2>Você está construindo sua história ou apenas repetindo padrões que recebeu?</h2>
+<p class="muted">Nossas raízes influenciam a maneira como pensamos, sentimos e agimos. A Conferência Origens é um convite para olhar com consciência para a própria história, reconsiderar padrões e abrir espaço para novas possibilidades.</p>
+<div class="pillars">
+<div class="pillar"><b>01 · OLHAR</b><p>Reconhecer as raízes e identificar influências que marcaram sua trajetória.</p></div>
+<div class="pillar"><b>02 · RECONSIDERAR</b><p>Questionar padrões, pensamentos e comportamentos que podem limitar seus passos.</p></div>
+<div class="pillar"><b>03 · REESCREVER</b><p>Assumir novas perspectivas e construir, com consciência, os próximos capítulos da sua história.</p></div>
+</div></div></section>
+<section class="ticket"><div class="wrap center">
+<div class="kicker">Condição promocional</div><h2>Uma experiência para viver e compartilhar.</h2>
+<div class="price">R$ 49,90 <small>por duas pessoas</small></div>
+<p class="muted">Convide alguém para participar com você. Um ingresso promocional para duas pessoas.</p>
+<p class="muted">Evento presencial · 20/02/2027 · 14h às 18h<br>Local exato em Itapevi/região será informado após a confirmação do espaço.</p>
+<a class="btn" href="https://checkout.infinitepay.io/eduardhosannttos/8qLj6KCjLC" target="_blank" rel="noopener">Comprar ingresso para duas pessoas</a>
+</div></section>
+<section><div class="wrap speaker center">
+<div class="kicker">Palestrante</div><h2>Pr. Eduardho Santtos</h2>
+<p>Pregador há 20 anos, comunicador e idealizador de experiências de ensino e reflexão por meio do Instituto Escola Essência.</p>
+<p class="muted">A fotografia oficial do palestrante será acrescentada nesta seção quando for enviada ao repositório.</p>
+</div></section>
+<footer>INSTITUTO ESCOLA ESSÊNCIA · CONFERÊNCIA ORIGENS — RENASCIMENTO<br>© 2027 · Todos os direitos reservados.</footer>
+</body></html>
